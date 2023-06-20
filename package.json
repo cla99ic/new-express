@@ -1,0 +1,29 @@
+{
+  "name": "new-express",
+  "version": "0.0.1",
+  "description": "Create a Basic Express App to Go",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "content"
+  ],
+  "bin": {
+    "new-express": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cla99ic/new-express.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Ali Javani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cla99ic/new-express/issues"
+  },
+  "homepage": "https://github.com/cla99ic/new-express#readme"
+}
