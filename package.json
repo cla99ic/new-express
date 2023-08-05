@@ -1,6 +1,6 @@
 {
   "name": "new-express",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create a Basic Express App to Go",
   "main": "index.js",
   "files": [
