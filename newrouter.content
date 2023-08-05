@@ -1,0 +1,12 @@
+import express, { Request, Response } from 'express'
+import { auth } from '../../middleware/authentication'
+import mongoose from 'mongoose'
+import debugLib from 'debug'
+const debug = debugLib('{filename} router')
+const ObjectId = mongoose.Types.ObjectId
+
+const router = express.Router()
+
+
+
+export default router

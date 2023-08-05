@@ -1,0 +1,40 @@
+import bcrypt from 'bcryptjs'
+import mongoose, { Document, Model, Types } from 'mongoose'
+import jwt from 'jsonwebtoken'
+import mainDB, { model } from '../../db/mongoose'
+import Role, { IRole } from './role'
+import CDocument from '../../../CustomDocument.js'
+import { generalApply } from '../../utilities.js'
+const Schema = mongoose.Schema
+
+export interface I{filename} extends CDocument {
+
+}
+interface {filename}Model extends Model<I{filename}> {
+
+}
+
+const {lowerfilename}Schema = new Schema<I{filename}>({
+
+}, { timestamps: true })
+
+{lowerfilename}Schema.pre('save', async function (next) {
+    const {lowerfilename} = this
+
+    next()
+})
+
+{lowerfilename}Schema.methods.toJSON = function () {
+    const modelObject = this.toObject() as any
+ 
+    delete modelObject.__v
+    return modelObject
+}
+
+{lowerfilename}Schema.methods.apply = async function (id: string, ip: string) {
+    await generalApply(id, this, {filename}, ip)
+}
+
+const {filename} = model<I{filename}, {filename}Model>('{filename}', {lowerfilename}Schema)
+
+export default {filename}
